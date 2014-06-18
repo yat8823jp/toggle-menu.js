@@ -1,0 +1,58 @@
+/* line 11, sass/main.scss */
+#menu {
+  width: 400px;
+  height: 50px;
+  display: block;
+}
+/* line 15, sass/main.scss */
+#menu li {
+  width: 200px;
+  height: 50px;
+  list-style-type: none;
+  float: left;
+}
+/* line 21, sass/main.scss */
+#menu li a {
+  width: 200px;
+  height: 50px;
+  display: block;
+}
+/* line 2, sass/main.scss */
+#menu li a:hover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* ie lt 8 */
+  -ms-filter: "alpha(opacity=50)";
+  /* ie 8 */
+  display: block;
+  zoom: 1;
+}
+/* line 29, sass/main.scss */
+#menu #bt1 a {
+  background: url(menu_active.jpg) no-repeat;
+}
+/* line 30, sass/main.scss */
+#menu #bt2 a {
+  background: url(menu_active.jpg) no-repeat;
+}
+/* line 31, sass/main.scss */
+#menu .active img {
+  display: none;
+}
+
+/* line 35, sass/main.scss */
+.switch {
+  position: relative;
+}
+/* line 37, sass/main.scss */
+.switch .bt1, .switch .bt2 {
+  width: 600px;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  display: none;
+}
+/* line 44, sass/main.scss */
+.switch .bt1.active, .switch .bt2.active {
+  display: block;
+}

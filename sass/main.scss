@@ -1,0 +1,45 @@
+@mixin opacityimg{
+	&:hover img{
+		opacity:0.5;
+		filter: alpha(opacity=50);        /* ie lt 8 */
+		-ms-filter: "alpha(opacity=50)";  /* ie 8 */
+		display:block;
+		zoom:1;
+	}
+}
+
+#menu{
+	width:400px;
+	height:50px;
+	display:block;
+	li{
+		width:200px;
+		height:50px;
+		list-style-type:none;
+		float:left;
+		
+		a{
+			width:200px;
+			height:50px;
+			display:block;
+			@include opacityimg;
+		}
+	}
+
+	#bt1 a{background:url(menu_active.jpg) no-repeat;}
+	#bt2 a{background:url(menu_active.jpg) no-repeat;}
+	.active img{display:none;}
+}
+
+
+.switch{
+	position:relative;
+	.bt1,.bt2{
+		width:600px;
+		height:400px;
+		left:0;
+		position:absolute;
+		display:none;
+	}
+	.bt1.active,.bt2.active{display:block;}
+}
